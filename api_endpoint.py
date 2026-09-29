@@ -398,7 +398,7 @@ def _calculate_sentiment_score(request: RiskPredictionRequest) -> float:
         score += 20  # Unknown protocols
     
     # Clamp to 0-100
-    return max(0.0, min(100.0, score))
+    return round(max(0.0, min(100.0, score)), 2)
 
 
 # Run with: uvicorn api_endpoint:app --reload
