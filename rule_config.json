@@ -1,0 +1,65 @@
+{
+  "chains": {
+    "ethereum": {
+      "max_loan_amount": 5000000,
+      "max_transaction_count": 1000,
+      "description": "Ethereum mainnet configuration"
+    },
+    "polygon": {
+      "max_loan_amount": 1000000,
+      "max_transaction_count": 2000,
+      "description": "Polygon (Matic) configuration"
+    },
+    "arbitrum": {
+      "max_loan_amount": 2000000,
+      "max_transaction_count": 1500,
+      "description": "Arbitrum L2 configuration"
+    },
+    "optimism": {
+      "max_loan_amount": 2000000,
+      "max_transaction_count": 1500,
+      "description": "Optimism L2 configuration"
+    },
+    "bsc": {
+      "max_loan_amount": 1500000,
+      "max_transaction_count": 2000,
+      "description": "Binance Smart Chain configuration"
+    },
+    "avalanche": {
+      "max_loan_amount": 1500000,
+      "max_transaction_count": 1500,
+      "description": "Avalanche C-Chain configuration"
+    }
+  },
+  "blacklisted_tokens": [
+    "0x0000000000000000000000000000000000000000",
+    "0xdead000000000000000042069420694206942069",
+    "0x1234567890123456789012345678901234567890"
+  ],
+  "protocol_risk_scores": {
+    "aave": 15,
+    "compound": 10,
+    "uniswap": 12,
+    "sushiswap": 15,
+    "curve": 10,
+    "balancer": 12,
+    "maker": 8,
+    "yearn": 18,
+    "convex": 16,
+    "pancakeswap": 14,
+    "quickswap": 13,
+    "traderjoe": 14,
+    "unknown": 50,
+    "new_protocol": 40
+  },
+  "suspicious_patterns": {
+    "rapid_swap": 30,
+    "liquidation_chain": 40,
+    "unknown_transaction": 25,
+    "high_frequency": 35
+  },
+  "transaction_count_thresholds": {
+    "suspicious_low": 5,
+    "suspicious_high": 500
+  }
+}
