@@ -1,0 +1,34 @@
+# DeFi Flash Loan Risk Prediction Service - Dependencies
+
+# Core Web Framework
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.5.0
+
+# Machine Learning
+xgboost>=2.0.0
+scikit-learn>=1.3.0
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Model Explainability
+shap>=0.43.0
+
+# Caching
+redis>=5.0.0
+
+# Utilities
+python-dotenv>=1.0.0
+
+# Blockchain Integration
+web3>=6.0.0
+eth-account>=0.10.0
+
+# Database
+sqlalchemy>=2.0.0
+alembic>=1.13.0
+psycopg2-binary>=2.9.0  # PostgreSQL
+asyncpg>=0.29.0  # Async PostgreSQL
+
+# Optional: For production deployment
+gunicorn>=21.2.0
