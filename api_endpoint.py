@@ -295,9 +295,14 @@ async def predict_risk(request: RiskPredictionRequest):
             risk_level = "MINIMAL"
         
         # Combine factors
+        ml_factor = (
+            f"ml_confidence_{int(confidence * 100)}"
+            if ml_service.use_ml_model
+            else "rule_based_fallback_mode"
+        )
         factors = list(set(
             rule_result.violations +
-            [f"ml_confidence_{int(confidence * 100)}"]
+            [ml_factor]
         ))
         
         # Generate prediction ID
