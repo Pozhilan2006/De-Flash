@@ -43,7 +43,7 @@ f:\defi-flash\
     └── RISK_PREDICTION_README.md      - ML service docs
 ```
 
-**Total: 23 files, ~3,800+ lines of production code**
+**Includes core services, database models, configuration, examples, and documentation**
 
 ---
 
